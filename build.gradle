@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'Cliente-REST'
+version '1.0-SNAPSHOT'
+mainClassName = 'Main.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile('com.konghq:unirest-java:3.2.00')//UniREST
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.1' //Gson
+}
